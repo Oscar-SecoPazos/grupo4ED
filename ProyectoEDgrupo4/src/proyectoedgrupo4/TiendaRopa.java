@@ -32,23 +32,23 @@ public class TiendaRopa {
     }
 
     public int getPrenda1() {
-        int cambiosCom;
+        int prendas1;
         if ((telaRoja / 2) < (telaNegra / 1)) {
-            cambiosCom = (int) (telaRoja / 2);
+            prendas1 = (int) (telaRoja / 2);
         } else {
-            cambiosCom = telaNegra / 1;
+            prendas1 = telaNegra / 1;
         }
-        return cambiosCom;
+        return prendas1;
     }
 
     public int getPrenda2() {
-        int cambiosPar;
+        int prendas2;
         if ((telaRoja / 1) < (telaNegra / 2)) {
-            cambiosPar = (int) (telaRoja / 1);
+            prendas2 = (int) (telaRoja / 1);
         } else {
-            cambiosPar = telaNegra / 2;
+            prendas2 = telaNegra / 2;
         }
-        return cambiosPar;
+        return prendas2;
     }
 
     public boolean prenda1() {
