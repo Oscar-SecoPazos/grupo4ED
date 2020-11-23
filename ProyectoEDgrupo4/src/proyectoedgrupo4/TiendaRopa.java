@@ -52,25 +52,25 @@ public class TiendaRopa {
     }
 
     public boolean prenda1() {
-        boolean auxCom = false;
+        boolean auxPrenda1 = false;
         if (telaRoja >= 2 && telaNegra >= 1) {
-            auxCom = true;
+            auxPrenda1 = true;
             telaRoja = telaRoja - 1;
             telaNegra = telaNegra - 2;
             contadorPrenda1++;
         }
-        return auxCom;
+        return auxPrenda1;
     }
 
     public boolean prenda2() {
-        boolean auxPar = false;
+        boolean auxPrenda2 = false;
         if (telaRoja >= 1 && telaNegra >= 2) {
-            auxPar = true;
+            auxPrenda2 = true;
             telaRoja = telaRoja - 1;
             telaNegra = telaNegra - 2;
             contadorPrenda2++;
         }
-        return auxPar;
+        return auxPrenda2;
     }
 
     public double getTelaRoja() {
