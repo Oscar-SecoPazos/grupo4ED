@@ -19,8 +19,7 @@ public class ProyectoEDgrupo4 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado=new Scanner(System.in);
-        int opc=0,huevos=0;
-        double chorizo=0;
+        int opc=0;
         do{
             do{
                 System.out.println("1.- .\n" +
