@@ -72,6 +72,7 @@ public class TiendaRopa {
         }
         return auxPrenda2;
     }
+    
 
     public double getTelaRoja() {
         return telaRoja;
