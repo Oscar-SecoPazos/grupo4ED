@@ -19,12 +19,12 @@ public class ProyectoEDgrupo4 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado=new Scanner(System.in);
-        int opc=0,huevos=0;
-        double chorizo=0;
+        TiendaRopa TiendaRopa = new TiendaRopa(0,0);
+        int opc=0,telanegra=0,telaroja=0;
         do{
             do{
-                System.out.println("1.- .\n" +
-                                   "2.- .\n" +
+                System.out.println("1.-Añadir tela roja y negra al inventario.\n" +
+                                   "2.-Obtener la cantidad de metros de tela roja y negra en el almacen.\n" +
                                    "3.- .\n" +
                                    "4.- .\n" +
                                    "5.- .\n" +
@@ -35,10 +35,15 @@ public class ProyectoEDgrupo4 {
             }while((opc>7)||(opc<1));
             switch(opc){
                 case 1:
-                    
+                    System.out.println("Cuantos metros de tela roja añadimos?");
+                    telaroja=teclado.nextInt();
+                    TiendaRopa.addTelaRoja(telaroja);
+                    System.out.println("Cuantos metros de tela negra añadimos?");
+                    telanegra=teclado.nextInt();
+                    TiendaRopa.addTelaNegra(telanegra);
                 break;
                 case 2:
-                    
+                    System.out.println("Tenemos "+TiendaRopa.getTelaRoja()+" metros de tela roja y "+TiendaRopa.getTelaNegra()+" metros de tela negra.");
                 break;
                 case 3:
                     
